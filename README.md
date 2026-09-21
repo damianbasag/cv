@@ -3,7 +3,9 @@
 ## Zawartość
 - `index.html` — cała strona (działa od razu, Tailwind ładuje się z CDN)
 - `cv.pdf` — CV do pobrania (przycisk „Pobierz CV”)
+- `images/machines/` — folder na rzeczywiste zdjęcia maszyn (z automatyczną nakładką blueprint)
 - `tailwind.config.js`, `input.css`, `build.js`, `package.json` — opcjonalna wersja z własnym CSS
+
 
 ## 1. Formularz kontaktowy (Formspree)
 Formularz jest już podpięty pod `https://formspree.io/f/xwlplrqw` (stała `FORM_ENDPOINT` w `index.html`).

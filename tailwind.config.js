@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./index.html'],
-  safelist: ['bg-cyan-500','text-white','border-cyan-400','bg-slate-900','text-slate-300','border-steel-800','opacity-0','hidden'],
+  safelist: ['bg-cyan-500','text-white','border-cyan-400','bg-slate-900','text-slate-300','border-steel-800','opacity-0','hidden','rotate-180'],
   darkMode: 'class',
   theme: {
       extend: {

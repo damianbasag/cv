@@ -14,4 +14,9 @@ if (!block.test(html)) {
 html = html.replace(block, () => '<link rel="stylesheet" href="styles.css">');
 fs.writeFileSync(path.join(dist, 'index.html'), html);
 fs.copyFileSync(path.join(__dirname, 'cv.pdf'), path.join(dist, 'cv.pdf'));
-console.log('OK: dist/index.html i dist/cv.pdf gotowe.');
+const imagesDir = path.join(__dirname, 'images');
+if (fs.existsSync(imagesDir)) {
+  fs.cpSync(imagesDir, path.join(dist, 'images'), { recursive: true });
+}
+console.log('OK: dist/index.html, dist/cv.pdf oraz dist/images/ gotowe.');
+
